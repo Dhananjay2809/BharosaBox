@@ -6,9 +6,17 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
   color: #111827;
+  background: linear-gradient(-45deg, #ffe6f0, #fddde6, #ffe4ec, #f9d0d3);
+  background-size: 400% 400%;
+  animation: gradientFlow 10s ease infinite;
+  min-height: 100vh;
 }
+
 
 .navbar {
   display: flex;
@@ -38,8 +46,15 @@ body {
   text-decoration: none;
   color: #111827;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.2s, transform 0.3s ease-in-out;
+  display: inline-block;
+  animation: floatButton 3s ease-in-out infinite;
 }
+.menu a:hover {
+  color: #2563eb;
+  transform: scale(1.05);
+}
+
 
 .menu a:hover {
   color: #2563eb;
@@ -66,7 +81,10 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.3;
+  color: #ffd60a; /* Yellow color */
+  animation: floatShake 2s ease-in-out infinite;
 }
+
 
 .highlight {
   color: #2563eb;
@@ -78,3 +96,77 @@ h1 {
   color: #555;
   line-height: 1.6;
 }
+.hero-3d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  perspective: 1000px;
+}
+
+.hero-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  transform: rotateY(10deg) rotateX(5deg);
+  transition: transform 0.6s ease;
+  max-width: 700px;
+  text-align: center;
+}
+
+.hero-card:hover {
+  transform: rotateY(0deg) rotateX(0deg) scale(1.03);
+}
+
+.floating-logo {
+  animation: floatLogo 3s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+.floating-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+@keyframes floatLogo {
+  0% {
+    transform: translateY(0px) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateY(10deg);
+  }
+  100% {
+    transform: translateY(0px) rotateY(0deg);
+  }
+}
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes floatShake {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-3px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(2px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(-1px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+
