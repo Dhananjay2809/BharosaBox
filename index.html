@@ -5,43 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BharosaBox</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="https://cdn-icons-png.flaticon.com/512/2085/2085267.png" alt="Logo" />
-      <span>BharosaBox</span>
-    </div>
-    <nav class="menu">
-      <a href="#">About Us</a>
-      <a href="#">Blogs</a>
-      <a href="#">Others</a>
-      <a href="#">Contact Us</a>
-    </nav>
-  </header>
+ <header class="navbar">
+  <div class="logo" onclick="dropLogo()">
+    <img src="https://cdn-icons-png.flaticon.com/512/2085/2085267.png" alt="Logo" id="logo-img" />
+   <span class="brand-name" onclick="explodeText()">BharosaBox</span>
 
- <main class="hero-3d">
-  <div class="hero-card">
-    <div class="floating-logo">
-      <img src="https://cdn-icons-png.flaticon.com/512/2085/2085267.png" alt="BharosaBox Logo" />
-    </div>
-    <div class="announcement">BharosaBox is now public!</div>
-    <h1>
-      Send your <span class="highlight">Parcels</span><br />
-      seamlessly with <strong>BharosaBox</strong>.
-    </h1>
-    <p class="subtitle">
-      BharosaBox makes sending packages easier and cheaper than ever before.<br />
-      Just sign up and tell us where you want your package to go.
-    </p>
   </div>
-  <div class="truck-path"></div>
+  
+  <nav class="menu">
+   <a href="#" onclick="showAbout()">About Us</a>
 
-</main>
-<div class="truck-background">
-  <img src="3dd.webp" class="truck truck-left" alt="Truck Left" />
-  <img src="3dd.webp" class="truck truck-right" alt="Truck Right" />
+    <a href="#">Blogs</a>
+    <a href="#">Others</a>
+    <a href="#">Contact Us</a>
+  </nav>
+</header>
+
+<!-- START WRAPPER -->
+<div id="homepage">
+  <main class="hero-3d">
+    <div class="hero-card">
+      <div class="floating-logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/2085/2085267.png" alt="BharosaBox Logo" />
+      </div>
+      <div class="announcement">BharosaBox is now public!</div>
+      <h1>
+        Send your <span class="highlight">Parcels</span><br />
+        seamlessly with <strong>BharosaBox</strong>.
+      </h1>
+      <p class="subtitle">
+        BharosaBox makes sending packages easier and cheaper than ever before.<br />
+        Just sign up and tell us where you want your package to go.
+      </p>
+    </div>
+    <div class="truck-path"></div>
+  </main>
+
+  <div class="truck-background">
+    <img src="3dd.webp" class="truck truck-left" alt="Truck Left" />
+    <img src="3dd.webp" class="truck truck-right" alt="Truck Right" />
+  </div>
 </div>
+<!-- END WRAPPER -->
+
+<section id="about" class="about-section">
+  <h2>Welcome to BharosaBox!</h2>
+  <p><strong>Learn Everything About Us</strong></p>
+  <p>
+    BharosaBox is an innovative peer-to-peer delivery platform designed to make parcel delivery easier, faster, and more affordable. We connect travelers with people who need to send parcels, offering a convenient solution for long-distance deliveries at a fraction of the cost of traditional courier services.
+  </p>
+
+  <p>
+    Our mission is simple: to create a faster, more affordable, and more efficient delivery network by leveraging the power of technology and the shared economy.
+  </p>
+
+  <h3>Why Choose BharosaBox?</h3>
+  <ul>
+    <li><strong>Affordability:</strong> Traditional courier services can be expensive, but BharosaBox offers a more affordable alternative.</li>
+    <li><strong>Speed:</strong> We ensure your parcel is delivered as quickly as possible.</li>
+    <li><strong>Trustworthy:</strong> We verify all our users using KYC to ensure safe transactions.</li>
+    <li><strong>Eco-Friendly:</strong> By utilizing travelers, we reduce carbon emissions and make deliveries more sustainable.</li>
+  </ul>
+
+  <h3>Our Story</h3>
+  <p>
+    BharosaBox was founded by a group of passionate individuals who saw an opportunity to change the way deliveries are made. With backgrounds in technology, business, and logistics, we came together with one common goal: to build a platform that simplifies and improves the delivery experience.
+  </p>
+
+  <p>
+    We understand that sending a parcel can sometimes be a hassle. Our solution is designed to make the process smooth, fast, and affordable, all while connecting people across distances.
+  </p>
+
+  <h3>Our Values</h3>
+  <ul>
+    <li><strong>Customer-Centric:</strong> We prioritize the needs of our users to provide exceptional service.</li>
+    <li><strong>Innovation:</strong> We constantly work on enhancing our platform with cutting-edge technology.</li>
+    <li><strong>Integrity:</strong> Transparency and honesty are at the core of everything we do.</li>
+    <li><strong>Sustainability:</strong> We aim to reduce our environmental impact and contribute to a greener future.</li>
+  </ul>
+
+  <h3>Our Future</h3>
+  <p>
+    We are continuously improving BharosaBox, expanding our network, and building new features to enhance the user experience. Our goal is to make BharosaBox the go-to platform for peer-to-peer deliveries, offering a fast, affordable, and reliable service.
+  </p>
+
+  <p>
+    Thank you for choosing BharosaBox. We're excited to be part of your delivery journey!
+  </p>
+</section>
 
 </body>
 </html>
