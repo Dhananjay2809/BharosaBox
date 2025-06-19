@@ -26,6 +26,31 @@
 
 <!-- START WRAPPER -->
 <div id="homepage">
+  <div class="search-bar">
+    <div class="search-field">
+      <i class="fas fa-location-dot"></i>
+      <input type="text" placeholder="Leaving from" />
+    </div>
+    <div class="search-field">
+      <i class="fas fa-location-arrow"></i>
+      <input type="text" placeholder="Going to" />
+    </div>
+    <div class="search-field">
+      <i class="fas fa-calendar-alt"></i>
+      <input type="date" />
+    </div>
+    <div class="search-field parcel-counter">
+      <i class="fas fa-box"></i>
+      <label>Parcel:</label>
+      <button onclick="decreaseParcel()">−</button>
+      <span id="parcelCount">1</span>
+      <button onclick="increaseParcel()">+</button>
+    </div>
+    <button class="search-btn">Search</button>
+  </div>
+</div>
+
+
   <main class="hero-3d">
     <div class="hero-card">
       <div class="floating-logo">
@@ -50,52 +75,62 @@
   </div>
 </div>
 <!-- END WRAPPER -->
+ 
 
 <section id="about" class="about-section">
-  <h2>Welcome to BharosaBox!</h2>
-  <p><strong>Learn Everything About Us</strong></p>
-  <p>
-    BharosaBox is an innovative peer-to-peer delivery platform designed to make parcel delivery easier, faster, and more affordable. We connect travelers with people who need to send parcels, offering a convenient solution for long-distance deliveries at a fraction of the cost of traditional courier services.
-  </p>
+  
+  <div class="about-container">
+    <h2 class="section-title">🚚 Welcome to <span class="highlight-text">BharosaBox</span></h2>
+    <p class="tagline">Delivering trust, one parcel at a time.</p>
 
-  <p>
-    Our mission is simple: to create a faster, more affordable, and more efficient delivery network by leveraging the power of technology and the shared economy.
-  </p>
+    <div class="about-card">
+      <h3>📦 Who We Are</h3>
+      <p>
+        BharosaBox is an innovative peer-to-peer delivery platform that connects travelers with senders —
+        making long-distance deliveries easier, faster, and way more affordable.
+      </p>
+    </div>
 
-  <h3>Why Choose BharosaBox?</h3>
-  <ul>
-    <li><strong>Affordability:</strong> Traditional courier services can be expensive, but BharosaBox offers a more affordable alternative.</li>
-    <li><strong>Speed:</strong> We ensure your parcel is delivered as quickly as possible.</li>
-    <li><strong>Trustworthy:</strong> We verify all our users using KYC to ensure safe transactions.</li>
-    <li><strong>Eco-Friendly:</strong> By utilizing travelers, we reduce carbon emissions and make deliveries more sustainable.</li>
-  </ul>
+    <div class="about-card">
+      <h3>💡 Why Choose Us?</h3>
+      <ul>
+        <li><strong>Affordability:</strong> Costs much less than traditional courier services.</li>
+        <li><strong>Speed:</strong> Real-time parcel matching ensures fast delivery.</li>
+        <li><strong>Trustworthy:</strong> All users are KYC verified.</li>
+        <li><strong>Eco-Friendly:</strong> Uses unused travel capacity to reduce emissions.</li>
+      </ul>
+    </div>
 
-  <h3>Our Story</h3>
-  <p>
-    BharosaBox was founded by a group of passionate individuals who saw an opportunity to change the way deliveries are made. With backgrounds in technology, business, and logistics, we came together with one common goal: to build a platform that simplifies and improves the delivery experience.
-  </p>
+    <div class="about-card">
+      <h3>🚀 Our Story</h3>
+      <p>
+        Born from the minds of tech enthusiasts and logistics experts, BharosaBox was created to revolutionize how we send things — with simplicity, speed, and sustainability at the core.
+      </p>
+    </div>
 
-  <p>
-    We understand that sending a parcel can sometimes be a hassle. Our solution is designed to make the process smooth, fast, and affordable, all while connecting people across distances.
-  </p>
+    <div class="about-card">
+      <h3>🌱 Our Values</h3>
+      <ul>
+        <li><strong>Customer First:</strong> You are our top priority.</li>
+        <li><strong>Transparency:</strong> Honest processes, always.</li>
+        <li><strong>Innovation:</strong> We love building cool things.</li>
+        <li><strong>Sustainability:</strong> Delivery, but greener.</li>
+      </ul>
+    </div>
 
-  <h3>Our Values</h3>
-  <ul>
-    <li><strong>Customer-Centric:</strong> We prioritize the needs of our users to provide exceptional service.</li>
-    <li><strong>Innovation:</strong> We constantly work on enhancing our platform with cutting-edge technology.</li>
-    <li><strong>Integrity:</strong> Transparency and honesty are at the core of everything we do.</li>
-    <li><strong>Sustainability:</strong> We aim to reduce our environmental impact and contribute to a greener future.</li>
-  </ul>
+    <div class="about-card">
+      <h3>📈 What’s Next?</h3>
+      <p>
+        We’re scaling fast and adding smarter features. Join our journey as we become India’s most trusted delivery platform powered by real people!
+      </p>
+    </div>
 
-  <h3>Our Future</h3>
-  <p>
-    We are continuously improving BharosaBox, expanding our network, and building new features to enhance the user experience. Our goal is to make BharosaBox the go-to platform for peer-to-peer deliveries, offering a fast, affordable, and reliable service.
-  </p>
-
-  <p>
-    Thank you for choosing BharosaBox. We're excited to be part of your delivery journey!
-  </p>
+    <div class="back-home-container">
+      <button onclick="goHome()">← Back to Home</button>
+    </div>
+  </div>
 </section>
+
 
 </body>
 </html>
