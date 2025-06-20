@@ -4,7 +4,7 @@ function dropLogo() {
 
   setTimeout(() => {
     window.location.href = "index.html"; // Or your desired page
-  }, 1000);
+  }, 50000);
 }
 function explodeText() {
   const brand = document.querySelector(".brand-name");
@@ -58,5 +58,20 @@ function decreaseParcel() {
   if (parcelCount > 1) {
     parcelCount--;
     parcelDisplay.textContent = parcelCount;
+  }
+}
+function validateLogin() {
+  const id = document.getElementById("loginId").value;
+  const password = document.getElementById("loginPassword").value;
+  const errorText = document.getElementById("login-error");
+
+  // Customize login credentials
+  const correctId = "Dhananjay";
+  const correctPassword = "dhanan123";
+
+  if (id === correctId && password === correctPassword) {
+    document.getElementById("login-page").style.display = "none";
+  } else {
+    errorText.textContent = "Incorrect ID or password. Try again.";
   }
 }
