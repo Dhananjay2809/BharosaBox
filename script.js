@@ -44,3 +44,19 @@ function showAbout() {
   about.style.display = "block";
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+let parcelCount = 1;
+const parcelDisplay = document.getElementById("parcelCount");
+
+function increaseParcel() {
+  if (parcelCount < 10) {
+    parcelCount++;
+    parcelDisplay.textContent = parcelCount;
+  }
+}
+
+function decreaseParcel() {
+  if (parcelCount > 1) {
+    parcelCount--;
+    parcelDisplay.textContent = parcelCount;
+  }
+}
